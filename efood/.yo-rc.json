@@ -1,0 +1,57 @@
+{
+  "generator-jhipster": {
+    "skipJhipsterDependencies": true,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-agilekip",
+        "version": "0.0.12"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-agilekip",
+        "version": "0.0.12"
+      }
+    ],
+    "applicationType": "monolith",
+    "baseName": "efood",
+    "jhipsterVersion": "7.0.1",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "testFrameworks": [],
+    "pages": [],
+    "creationTimestamp": 1665869152521,
+    "serviceDiscoveryType": false,
+    "reactive": false,
+    "authenticationType": "jwt",
+    "packageName": "com.xpto.efood",
+    "serverPort": "8080",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "buildTool": "maven",
+    "serverSideOptions": [],
+    "websocket": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "enableSwaggerCodegen": false,
+    "clientFramework": "vue",
+    "withAdminUi": true,
+    "clientTheme": "none",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "packageFolder": "com/xpto/efood",
+    "jwtSecretKey": "ZDg5YzkxZDM0MDFiN2U5YWVlOTc5Y2E4ZTM0NDViNmQ5ZmY1M2ZjZTJjYmZjNmFkYzk4OTg0NzhhOTU2MTEyZTFmZTU1MDE2OGMxMmIyZTUzZWNkYmZiYjg5MDZjM2FjNjFmZTYxMTk4ZTNjNjc2YmM1OTBiNWUyZmYwYjUxYWU=",
+    "clientPackageManager": "npm",
+    "clientThemeVariant": "",
+    "languages": ["en"]
+  }
+}
