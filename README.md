@@ -1,4 +1,4 @@
-# QOS-Grupo-XPTO
+# EFood
 
 ## Tema
 Automatização de um sistema de pedido de comida
