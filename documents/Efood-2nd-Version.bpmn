@@ -30,7 +30,7 @@
       <bpmn:incoming>Flow_1c606sd</bpmn:incoming>
       <bpmn:outgoing>Flow_0duf11f</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:endEvent id="Event_0zzcvp1" name="Não sou obrigado">
+    <bpmn:endEvent id="Event_0zzcvp1" name="NÃ£o sou obrigado">
       <bpmn:incoming>Flow_1tgrcn3</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:task id="Activity_1825372" name="Entregar o pedido">
@@ -55,7 +55,7 @@
     <bpmn:sequenceFlow id="Flow_1tgrcn3" sourceRef="Activity_1ag6mlu" targetRef="Event_0zzcvp1" />
     <bpmn:sequenceFlow id="Flow_1ar124d" sourceRef="Activity_1825372" targetRef="Event_176qrbr" />
     <bpmn:sequenceFlow id="Flow_0okk7nt" sourceRef="Activity_0568cdm" targetRef="Activity_1825372" />
-    <bpmn:intermediateCatchEvent id="Event_01y4z6s" name="&#34;Moço vai demorar muito?&#34;">
+    <bpmn:intermediateCatchEvent id="Event_01y4z6s" name="&#34;MoÃ§o vai demorar muito?&#34;">
       <bpmn:incoming>Flow_0duf11f</bpmn:incoming>
       <bpmn:incoming>Flow_0iftps4</bpmn:incoming>
       <bpmn:outgoing>Flow_1c606sd</bpmn:outgoing>
