@@ -1,0 +1,59 @@
+{
+  "fields": [
+    {
+      "fieldName": "nomeUsuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enderecoUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "telefoneUsuario",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomeentregador",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefonerestaurante",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "emailrestaurante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ruarestaurante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ceprestaurante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idPedido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "horaPedido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "custoPedido",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": true,
+  "pagination": "no",
+  "name": "Pedir",
+  "changelogDate": "20221117033702",
+  "skipFakeData": true
+}
