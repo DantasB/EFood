@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Pedir.
+    -->
+    <changeSet id="20221117033702-1" author="jhipster">
+        <createTable tableName="pedir">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nome_usuario" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="endereco_usuario" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="telefone_usuario" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="nomeentregador" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="telefonerestaurante" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <column name="emailrestaurante" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ruarestaurante" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="ceprestaurante" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="id_pedido" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hora_pedido" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="custo_pedido" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+</databaseChangeLog>

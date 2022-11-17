@@ -33,6 +33,10 @@
             <font-awesome-icon icon="th-list" />
             <span class="no-bold" v-text="$t('global.menu.entities.main')">Entities</span>
           </span>
+          <b-dropdown-item to="/pedir">
+            <font-awesome-icon icon="asterisk" />
+            <span v-text="$t('global.menu.entities.pedir')">Pedir</span>
+          </b-dropdown-item>
           <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
         </b-nav-item-dropdown>
         <b-nav-item-dropdown

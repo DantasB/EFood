@@ -48,6 +48,8 @@ public class CacheConfiguration {
             createCache(cm, com.xpto.efood.domain.User.class.getName());
             createCache(cm, com.xpto.efood.domain.Authority.class.getName());
             createCache(cm, com.xpto.efood.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.xpto.efood.domain.Pedir.class.getName());
+            createCache(cm, com.xpto.efood.domain.PedirProcess.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

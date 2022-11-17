@@ -1,0 +1,26 @@
+{
+  "efoodApp": {
+    "pedir": {
+      "home": {
+        "title": "Pedirs",
+        "refreshListLabel": "Refresh list",
+        "notFound": "No Pedirs found"
+      },
+      "detail": {
+        "title": "Pedir"
+      },
+      "id": "ID",
+      "nomeUsuario": "Nome Usuario",
+      "enderecoUsuario": "Endereco Usuario",
+      "telefoneUsuario": "Telefone Usuario",
+      "nomeentregador": "Nomeentregador",
+      "telefonerestaurante": "Telefonerestaurante",
+      "emailrestaurante": "Emailrestaurante",
+      "ruarestaurante": "Ruarestaurante",
+      "ceprestaurante": "Ceprestaurante",
+      "idPedido": "Id Pedido",
+      "horaPedido": "Hora Pedido",
+      "custoPedido": "Custo Pedido"
+    }
+  }
+}

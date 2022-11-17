@@ -12,6 +12,9 @@
         "processInstance": "Process Instances",
         "taskInstance": "All Tasks",
         "myCandidateTasks": "My Tasks",
+        "pedir": "Pedir",
+        "pedirProcess": "Pedir Process",
+        "pedirStartForm": "Pedir Start Form",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
