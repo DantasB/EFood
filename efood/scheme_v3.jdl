@@ -11,8 +11,3 @@ entity Pedir {
     horaPedido String
     custoPedido String
 }
-
- dto * with mapstruct
-
- service * with serviceClass
- 
