@@ -1,0 +1,18 @@
+entity Pedir {
+	nomeUsuario String
+    enderecoUsuario String required
+    telefoneUsuario Long 
+    nomeentregador String required
+	telefonerestaurante Long
+    emailrestaurante String required
+	ruarestaurante String required
+	ceprestaurante String required
+	idPedido String required
+    horaPedido String
+    custoPedido String
+}
+
+ dto * with mapstruct
+
+ service * with serviceClass
+ 
