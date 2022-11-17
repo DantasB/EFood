@@ -1,0 +1,75 @@
+entity Usuario {
+	nome String
+    endereco String required
+    telefone Long
+}
+
+entity Entregador {
+	nome String required
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Restaurante {
+	telefone Long
+    email String required
+	rua String required
+	cep String required
+}
+
+entity Pedido {
+	id String required
+    hora String
+    custo String
+}
+
+entity JobHistory {
+	startDate Instant
+	endDate Instant
+	language Language
+}
+
+enum Language {
+    FRENCH, ENGLISH, SPANISH
+}
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+
+relationship OneToOne {
+	Pedido to Entregador
+}
+
+relationship OneToOne {
+	Pedido to Restaurante
+}
+
+relationship OneToOne {
+	Pedido to Usuario
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Restaurante to Entregador
+}
+
+relationship OneToOne {
+    JobHistory{pedido} to Pedido
+    JobHistory{restaurante} to Restaurante
+    JobHistory{usuario} to Usuario
+}
+
+// Set pagination options
+paginate JobHistory, Employee with infinite-scroll
+paginate Job with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
