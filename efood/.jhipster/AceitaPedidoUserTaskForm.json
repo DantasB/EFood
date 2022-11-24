@@ -10,7 +10,7 @@
     },
     {
       "fieldName": "custoPedido",
-      "fieldType": "Integer"
+      "fieldType": "Float"
     }
   ],
   "relationships": [],
