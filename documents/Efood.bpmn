@@ -2,7 +2,7 @@
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js-token-simulation" exporterVersion="0.28.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="8bad08ad-0c9c-43a4-a8e6-01fef5c67482">
   <bpmn:collaboration id="Collaboration_0bwn2y3">
     <bpmn:participant id="Participant_0et2bqn" name="Cliente" processRef="Process_a9ca52bb-9b9c-45a3-a427-328d24aee39c" />
-    <bpmn:participant id="Participant_0b7q6iz" name="Restauranrte" processRef="Process_0cm0r6s" />
+    <bpmn:participant id="Participant_0b7q6iz" name="Restaurante" processRef="Process_0cm0r6s" />
     <bpmn:messageFlow id="Flow_1924k8i" name="Pedido" sourceRef="Activity_0ug2ilx" targetRef="Event_1v8cdk7" />
     <bpmn:messageFlow id="Flow_1vv5m01" name="Aviso de pedido recusado" sourceRef="Activity_1ag6mlu" targetRef="Event_0l2wl5m" />
     <bpmn:messageFlow id="Flow_07tpx5k" name="Aviso de pedido sendo preparado" sourceRef="Activity_02pzcdq" targetRef="Event_19exx3q" />
@@ -37,7 +37,7 @@
       <bpmn:outgoing>Flow_0p9z3vm</bpmn:outgoing>
       <bpmn:timerEventDefinition id="TimerEventDefinition_0h0nlmm" />
     </bpmn:intermediateCatchEvent>
-    <bpmn:task id="Activity_1rt3lz7" name="Perguntar qual a situação do pedido">
+    <bpmn:task id="Activity_1rt3lz7" name="Perguntar qual a situaï¿½ï¿½o do pedido">
       <bpmn:incoming>Flow_0p9z3vm</bpmn:incoming>
       <bpmn:outgoing>Flow_1tn2lqm</bpmn:outgoing>
     </bpmn:task>
@@ -51,7 +51,7 @@
       <bpmn:errorEventDefinition id="ErrorEventDefinition_0582ubp" />
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_1fgrrfm" sourceRef="Activity_1bhj0wi" targetRef="Event_08ppwen" />
-    <bpmn:task id="Activity_0587q2i" name="Comer um frango a milanesa, batata frita, feijão, farofa e arroz">
+    <bpmn:task id="Activity_0587q2i" name="Comer um frango a milanesa, batata frita, feijï¿½o, farofa e arroz">
       <bpmn:incoming>Flow_13x5phz</bpmn:incoming>
       <bpmn:outgoing>Flow_03ixjjy</bpmn:outgoing>
     </bpmn:task>
@@ -137,7 +137,7 @@
       <bpmn:outgoing>Flow_1cd427b</bpmn:outgoing>
       <bpmn:outgoing>Flow_0iftps4</bpmn:outgoing>
     </bpmn:parallelGateway>
-    <bpmn:intermediateCatchEvent id="Event_01y4z6s" name="&#34;Moço vai demorar muito?&#34;">
+    <bpmn:intermediateCatchEvent id="Event_01y4z6s" name="&#34;Moï¿½o vai demorar muito?&#34;">
       <bpmn:incoming>Flow_0iftps4</bpmn:incoming>
       <bpmn:incoming>Flow_0duf11f</bpmn:incoming>
       <bpmn:outgoing>Flow_1c606sd</bpmn:outgoing>
