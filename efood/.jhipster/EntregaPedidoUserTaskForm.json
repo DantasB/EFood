@@ -6,11 +6,11 @@
     },
     {
       "fieldName": "telefoneRestaurante",
-      "fieldType": "String"
+      "fieldType": "Long"
     },
     {
       "fieldName": "emailRestaurante",
-      "fieldType": "Long"
+      "fieldType": "String"
     },
     {
       "fieldName": "ruaRestaurante",

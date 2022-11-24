@@ -2,15 +2,15 @@
   "fields": [
     {
       "fieldName": "idPedido",
-      "fieldType": "String"
+      "fieldType": "Long"
     },
     {
       "fieldName": "horaPedido",
-      "fieldType": "String"
+      "fieldType": "LocalDate"
     },
     {
       "fieldName": "custoPedido",
-      "fieldType": "Long"
+      "fieldType": "Integer"
     }
   ],
   "relationships": [],

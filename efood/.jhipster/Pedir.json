@@ -31,19 +31,19 @@
     },
     {
       "fieldName": "cepRestaurante",
-      "fieldType": "String"
+      "fieldType": "Long"
     },
     {
       "fieldName": "idPedido",
-      "fieldType": "String"
+      "fieldType": "Long"
     },
     {
       "fieldName": "horaPedido",
-      "fieldType": "String"
+      "fieldType": "LocalDate"
     },
     {
       "fieldName": "custoPedido",
-      "fieldType": "String"
+      "fieldType": "Integer"
     }
   ],
   "relationships": [],
