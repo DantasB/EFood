@@ -14,7 +14,7 @@
     },
     {
       "fieldName": "ruaRestaurante",
-      "fieldType": "Long"
+      "fieldType": "String"
     },
     {
       "fieldName": "cepRestaurante",
