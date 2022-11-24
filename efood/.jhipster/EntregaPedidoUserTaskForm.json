@@ -1,0 +1,38 @@
+{
+  "fields": [
+    {
+      "fieldName": "nomeEntregador",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefoneRestaurante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailRestaurante",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "ruaRestaurante",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cepRestaurante",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "PedirProcess",
+  "processEntityName": "PedirProcess",
+  "taskBpmnId": "EntregaPedidoUserTaskForm",
+  "domainEntityName": "Pedir",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "EntregaPedidoUserTaskForm",
+  "changelogDate": "20221117033702",
+  "skipFakeData": true
+}

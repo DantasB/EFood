@@ -1,0 +1,30 @@
+{
+  "fields": [
+    {
+      "fieldName": "idPedido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "horaPedido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "custoPedido",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "PedirProcess",
+  "processEntityName": "PedirProcess",
+  "taskBpmnId": "AceitaPedidoUserTaskForm",
+  "domainEntityName": "Pedir",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "AceitaPedidoUserTaskForm",
+  "changelogDate": "20221117033702",
+  "skipFakeData": true
+}

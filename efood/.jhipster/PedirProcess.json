@@ -1,0 +1,61 @@
+{
+  "fields": [
+    {
+      "fieldName": "nomeUsuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enderecoUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "telefoneUsuario",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomeEntregador",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefoneRestaurante",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "emailRestaurante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ruaRestaurante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cepRestaurante",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idPedido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "horaPedido",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "custoPedido",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityType": "process-binding",
+  "processBpmnId": "PedirProcess",
+  "domainEntityName": "Pedir",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "PedirProcess",
+  "changelogDate": "20221117033702",
+  "skipFakeData": true
+}

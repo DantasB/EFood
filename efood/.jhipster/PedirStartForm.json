@@ -1,0 +1,30 @@
+{
+  "fields": [
+    {
+      "fieldName": "nomeUsuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enderecoUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "telefoneUsuario",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "PedirProcess",
+  "processEntityName": "PedirProcess",
+  "domainEntityName": "Pedir",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "PedirStartForm",
+  "changelogDate": "20221117033702",
+  "skipFakeData": true
+}
