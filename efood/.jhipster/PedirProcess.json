@@ -38,7 +38,7 @@
       "fieldType": "Long"
     },
     {
-      "fieldName": "horaPedido",
+      "fieldName": "dataPedido",
       "fieldType": "LocalDate"
     },
     {
