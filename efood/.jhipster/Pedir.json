@@ -14,23 +14,23 @@
       "fieldType": "Long"
     },
     {
-      "fieldName": "nomeentregador",
+      "fieldName": "nomeEntregador",
       "fieldType": "String"
     },
     {
-      "fieldName": "telefonerestaurante",
+      "fieldName": "telefoneRestaurante",
       "fieldType": "Long"
     },
     {
-      "fieldName": "emailrestaurante",
+      "fieldName": "emailRestaurante",
       "fieldType": "String"
     },
     {
-      "fieldName": "ruarestaurante",
+      "fieldName": "ruaRestaurante",
       "fieldType": "String"
     },
     {
-      "fieldName": "ceprestaurante",
+      "fieldName": "cepRestaurante",
       "fieldType": "String"
     },
     {
