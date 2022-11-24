@@ -39,7 +39,7 @@
     },
     {
       "fieldName": "horaPedido",
-      "fieldType": "LocalData"
+      "fieldType": "LocalDate"
     },
     {
       "fieldName": "custoPedido",
