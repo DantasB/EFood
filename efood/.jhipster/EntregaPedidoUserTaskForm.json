@@ -19,6 +19,10 @@
     {
       "fieldName": "cepRestaurante",
       "fieldType": "Long"
+    },
+    {
+      "fieldName": "idRestaurante",
+      "fieldType": "Long"
     }
   ],
   "relationships": [],

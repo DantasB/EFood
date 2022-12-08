@@ -1,27 +1,20 @@
 {
   "fields": [
     {
-      "fieldName": "telefoneRestaurante",
+      "fieldName": "nomeUsuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enderecoUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "telefoneUsuario",
       "fieldType": "Long"
     },
     {
-      "fieldName": "emailRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "ruaRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "cepRestaurante",
-      "fieldType": "Long"
-    },
-    {
-      "fieldName": "nomeEntregador",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "idRestaurante",
+      "fieldName": "idUsuario",
       "fieldType": "Long"
     }
   ],
@@ -32,7 +25,7 @@
   "jpaMetamodelFiltering": false,
   "readOnly": false,
   "pagination": "no",
-  "name": "Restaurante",
+  "name": "Usuario",
   "changelogDate": "20211109000001",
   "skipFakeData": true
 }

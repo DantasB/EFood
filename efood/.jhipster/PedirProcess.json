@@ -1,49 +1,16 @@
 {
   "fields": [
     {
-      "fieldName": "nomeUsuario",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "enderecoUsuario",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
-    },
-    {
-      "fieldName": "telefoneUsuario",
+      "fieldName": "idUsuario",
       "fieldType": "Long"
     },
     {
-      "fieldName": "nomeEntregador",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "telefoneRestaurante",
-      "fieldType": "Long"
-    },
-    {
-      "fieldName": "emailRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "ruaRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "cepRestaurante",
+      "fieldName": "idRestaurante",
       "fieldType": "Long"
     },
     {
       "fieldName": "idPedido",
       "fieldType": "Long"
-    },
-    {
-      "fieldName": "dataPedido",
-      "fieldType": "LocalDate"
-    },
-    {
-      "fieldName": "custoPedido",
-      "fieldType": "Float"
     }
   ],
   "relationships": [
@@ -51,13 +18,13 @@
       "relationshipName": "restaurante",
       "otherEntityName": "restaurante",
       "relationshipType": "many-to-one",
-      "otherEntityField": "emailRestaurante"
+      "otherEntityField": "idRestaurante"
     },
     {
       "relationshipName": "user",
       "otherEntityName": "user",
       "relationshipType": "many-to-one",
-      "otherEntityField": "nomeUsuario"
+      "otherEntityField": "idUsuario"
     },
     {
       "relationshipName": "pedido",

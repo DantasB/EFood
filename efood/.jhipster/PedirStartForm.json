@@ -12,6 +12,10 @@
     {
       "fieldName": "telefoneUsuario",
       "fieldType": "Long"
+    },
+    {
+      "fieldName": "idUsuario",
+      "fieldType": "Long"
     }
   ],
   "relationships": [],
