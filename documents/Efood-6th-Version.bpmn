@@ -17,7 +17,7 @@
       <bpmn:incoming>Flow_07kv4c0</bpmn:incoming>
       <bpmn:outgoing>Flow_0gdsfkj</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:serviceTask id="SistemaProcessaPedido" name="Sistema processa o pedido" camunda:delegateExpression="${integrateThirdPartyDelegate}">
+    <bpmn:serviceTask id="SistemaProcessaPedido" name="Sistema processa o pedido" camunda:delegateExpression="${thirdParty}">
       <bpmn:incoming>Flow_0gdsfkj</bpmn:incoming>
       <bpmn:outgoing>Flow_0lkg1j7</bpmn:outgoing>
     </bpmn:serviceTask>
