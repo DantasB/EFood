@@ -1,0 +1,27 @@
+{
+    "fields": [
+      {
+        "fieldName": "idPedido",
+        "fieldType": "Long"
+      },
+      {
+        "fieldName": "dataPedido",
+        "fieldType": "LocalDate"
+      },
+      {
+        "fieldName": "custoPedido",
+        "fieldType": "Float"
+      }
+    ],
+    "relationships": [],
+    "entityType": "domain",
+    "service": "serviceClass",
+    "dto": "mapstruct",
+    "jpaMetamodelFiltering": false,
+    "readOnly": false,
+    "pagination": "no",
+    "name": "Pedido",
+    "changelogDate": "20211109000001",
+    "skipFakeData": true
+  }
+  

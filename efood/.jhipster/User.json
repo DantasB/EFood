@@ -1,0 +1,28 @@
+{
+    "fields": [
+      {
+        "fieldName": "nomeUsuario",
+        "fieldType": "String"
+      },
+      {
+        "fieldName": "enderecoUsuario",
+        "fieldType": "String",
+        "fieldValidateRules": ["required"]
+      },
+      {
+        "fieldName": "telefoneUsuario",
+        "fieldType": "Long"
+      }
+    ],
+    "relationships": [],
+    "entityType": "domain",
+    "service": "serviceClass",
+    "dto": "mapstruct",
+    "jpaMetamodelFiltering": false,
+    "readOnly": false,
+    "pagination": "no",
+    "name": "User",
+    "changelogDate": "20211109000001",
+    "skipFakeData": true
+  }
+  

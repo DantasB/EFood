@@ -46,7 +46,26 @@
       "fieldType": "Float"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipName": "restaurante",
+      "otherEntityName": "restaurante",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "emailRestaurante"
+    },
+    {
+      "relationshipName": "user",
+      "otherEntityName": "user",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "nomeUsuario"
+    },
+    {
+      "relationshipName": "pedido",
+      "otherEntityName": "pedido",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "idPedido"
+    }
+  ],
   "entityType": "process-binding",
   "processBpmnId": "PedirProcess",
   "domainEntityName": "Pedir",
