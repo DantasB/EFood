@@ -21,7 +21,7 @@
       "fieldType": "String"
     },
     {
-      "fieldName": "idRestaurante",
+      "fieldName": "cnpjRestaurante",
       "fieldType": "Long"
     }
   ],

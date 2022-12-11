@@ -14,7 +14,7 @@
       "fieldType": "Long"
     },
     {
-      "fieldName": "idUsuario",
+      "fieldName": "cpfUsuario",
       "fieldType": "Long"
     }
   ],
@@ -22,7 +22,7 @@
   "entityType": "start-form",
   "processBpmnId": "PedirProcess",
   "processEntityName": "PedirProcess",
-  "domainEntityName": "Pedir",
+  "domainEntityName": "Usuario",
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,

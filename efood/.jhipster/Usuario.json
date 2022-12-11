@@ -14,7 +14,7 @@
       "fieldType": "Long"
     },
     {
-      "fieldName": "idUsuario",
+      "fieldName": "cpfUsuario",
       "fieldType": "Long"
     }
   ],

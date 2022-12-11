@@ -21,7 +21,7 @@
       "fieldType": "Long"
     },
     {
-      "fieldName": "idRestaurante",
+      "fieldName": "cnpjRestaurante",
       "fieldType": "Long"
     }
   ],
@@ -30,7 +30,7 @@
   "processBpmnId": "PedirProcess",
   "processEntityName": "PedirProcess",
   "taskBpmnId": "EntregaPedidoUserTaskForm",
-  "domainEntityName": "Pedir",
+  "domainEntityName": "Restaurante",
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
