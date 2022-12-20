@@ -11,7 +11,7 @@ public class ThirdParty implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
-        PedirProcessDTO PedirProcess = (PedirProcessDTO) delegateExecution.getVariable("processInstance");
+        PedirProcessDTO PedirProcess = (PedirProcessDTO) delegateExecution.getVariable("pi");
         PedirDTO pedir = PedirProcess.getPedir();
         String nome = pedir.getNomeUsuario();
         if(nome.trim() == "caramal"){
