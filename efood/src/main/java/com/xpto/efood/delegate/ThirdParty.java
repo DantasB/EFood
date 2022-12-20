@@ -21,7 +21,7 @@ public class ThirdParty implements JavaDelegate {
             System.out.println("OrderService: ###########################################");
             System.out.println("OrderService: ###########################################");
             System.out.println("OrderService: ###########################################\n\n\n");
-            delegateExecution.setVariable("DevePedir", false)
+            delegateExecution.setVariable("DevePedir", false);
         }else{
             System.out.println("OrderService: ###########################################");
             System.out.println("OrderService: ###########################################");
@@ -30,7 +30,7 @@ public class ThirdParty implements JavaDelegate {
             System.out.println("OrderService: ###########################################");
             System.out.println("OrderService: ###########################################");
             System.out.println("OrderService: ###########################################\n\n\n");
-            delegateExecution.setVariable("DevePedir", true)
+            delegateExecution.setVariable("DevePedir", true);
         }
     }
 }
