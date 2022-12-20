@@ -1,12 +1,8 @@
 {
   "fields": [
     {
-      "fieldName": "idPedido",
-      "fieldType": "Long"
-    },
-    {
-      "fieldName": "dataPedido",
-      "fieldType": "LocalDate"
+      "fieldName": "nomePedido",
+      "fieldType": "String"
     },
     {
       "fieldName": "custoPedido",

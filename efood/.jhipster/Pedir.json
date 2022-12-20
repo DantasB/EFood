@@ -1,23 +1,40 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "fieldName": "nomeUsuario",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enderecoUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "emailUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "telefoneUsuario",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpfUsuario",
+      "fieldType": "Long"
+    }
+  ],
   "relationships": [
     {
       "relationshipName": "restaurante",
       "otherEntityName": "restaurante",
       "relationshipType": "many-to-one",
-      "otherEntityField": "cnpjRestaurante"
-    },
-    {
-      "relationshipName": "usuario",
-      "otherEntityName": "usuario",
-      "relationshipType": "many-to-one",
-      "otherEntityField": "cpfUsuario"
+      "otherEntityField": "nomeRestaurante"
     },
     {
       "relationshipName": "pedido",
       "otherEntityName": "pedido",
       "relationshipType": "many-to-one",
-      "otherEntityField": "idPedido"
+      "otherEntityField": "nomePedido"
     }
   ],
   "entityType": "domain",

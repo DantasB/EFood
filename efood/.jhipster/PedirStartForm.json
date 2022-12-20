@@ -16,13 +16,18 @@
     {
       "fieldName": "cpfUsuario",
       "fieldType": "Long"
+    },
+    {
+      "fieldName": "emailUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
   "relationships": [],
   "entityType": "start-form",
   "processBpmnId": "PedirProcess",
   "processEntityName": "PedirProcess",
-  "domainEntityName": "Usuario",
+  "domainEntityName": "Pedir",
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,

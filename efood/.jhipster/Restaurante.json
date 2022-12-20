@@ -23,6 +23,10 @@
     {
       "fieldName": "cnpjRestaurante",
       "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomeRestaurante",
+      "fieldType": "String"
     }
   ],
   "relationships": [],
