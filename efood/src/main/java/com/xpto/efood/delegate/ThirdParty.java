@@ -1,5 +1,6 @@
 package com.xpto.efood.delegate;
 
+import com.xpto.efood.service.dto.PedirDTO;
 import com.xpto.efood.service.dto.PedirProcessDTO;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
