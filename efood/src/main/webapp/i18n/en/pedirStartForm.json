@@ -1,0 +1,28 @@
+{
+  "efoodApp": {
+    "pedirStartForm": {
+      "home": {
+        "title": "Pedir Start Forms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Pedir Start Form",
+        "createOrEditLabel": "Create or edit a Pedir Start Form",
+        "notFound": "No Pedir Start Forms found"
+      },
+      "created": "A new Pedir Start Form is created with identifier {{ param }}",
+      "updated": "A Pedir Start Form is updated with identifier {{ param }}",
+      "deleted": "A Pedir Start Form is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Pedir Start Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Pedir Start Form"
+      },
+      "id": "ID",
+      "nomeUsuario": "Nome Usuario",
+      "enderecoUsuario": "Endereco Usuario",
+      "telefoneUsuario": "Telefone Usuario",
+      "cpfUsuario": "Cpf Usuario",
+      "emailUsuario": "Email Usuario"
+    }
+  }
+}

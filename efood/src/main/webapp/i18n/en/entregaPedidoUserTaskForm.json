@@ -1,0 +1,25 @@
+{
+  "efoodApp": {
+    "entregaPedidoUserTaskForm": {
+      "home": {
+        "title": "Entrega Pedido User Task Forms",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entrega Pedido User Task Form",
+        "createOrEditLabel": "Create or edit a Entrega Pedido User Task Form",
+        "notFound": "No Entrega Pedido User Task Forms found"
+      },
+      "created": "A new Entrega Pedido User Task Form is created with identifier {{ param }}",
+      "updated": "A Entrega Pedido User Task Form is updated with identifier {{ param }}",
+      "deleted": "A Entrega Pedido User Task Form is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Entrega Pedido User Task Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Entrega Pedido User Task Form"
+      },
+      "id": "ID",
+      "restaurante": "Restaurante",
+      "pedido": "Pedido"
+    }
+  }
+}

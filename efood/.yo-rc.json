@@ -52,6 +52,7 @@
     "jwtSecretKey": "ZDg5YzkxZDM0MDFiN2U5YWVlOTc5Y2E4ZTM0NDViNmQ5ZmY1M2ZjZTJjYmZjNmFkYzk4OTg0NzhhOTU2MTEyZTFmZTU1MDE2OGMxMmIyZTUzZWNkYmZiYjg5MDZjM2FjNjFmZTYxMTk4ZTNjNjc2YmM1OTBiNWUyZmYwYjUxYWU=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en"]
+    "languages": ["en"],
+    "entities": ["Pedir", "Usuario", "Restaurante", "Pedido"]
   }
 }

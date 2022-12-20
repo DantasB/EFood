@@ -12,6 +12,13 @@
         "processInstance": "Process Instances",
         "taskInstance": "All Tasks",
         "myCandidateTasks": "My Tasks",
+        "pedir": "Pedir",
+        "usuario": "Usuario",
+        "restaurante": "Restaurante",
+        "pedido": "Pedido",
+        "pedirProcess": "Pedir Process",
+        "pedirStartForm": "Pedir Start Form",
+        "entregaPedidoUserTaskForm": "Entrega Pedido User Task Form",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
