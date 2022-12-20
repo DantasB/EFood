@@ -12,6 +12,15 @@
     {
       "fieldName": "telefoneUsuario",
       "fieldType": "Long"
+    },
+    {
+      "fieldName": "cpfUsuario",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "emailUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
   "relationships": [],

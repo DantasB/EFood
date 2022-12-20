@@ -10,43 +10,33 @@
       "fieldValidateRules": ["required"]
     },
     {
+      "fieldName": "emailUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
       "fieldName": "telefoneUsuario",
       "fieldType": "Long"
     },
     {
-      "fieldName": "nomeEntregador",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "telefoneRestaurante",
+      "fieldName": "cpfUsuario",
       "fieldType": "Long"
-    },
-    {
-      "fieldName": "emailRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "ruaRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "cepRestaurante",
-      "fieldType": "Long"
-    },
-    {
-      "fieldName": "idPedido",
-      "fieldType": "Long"
-    },
-    {
-      "fieldName": "dataPedido",
-      "fieldType": "LocalDate"
-    },
-    {
-      "fieldName": "custoPedido",
-      "fieldType": "Float"
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipName": "restaurante",
+      "otherEntityName": "restaurante",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "nomeRestaurante"
+    },
+    {
+      "relationshipName": "pedido",
+      "otherEntityName": "pedido",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "nomePedido"
+    }
+  ],
   "entityType": "process-binding",
   "processBpmnId": "PedirProcess",
   "domainEntityName": "Pedir",

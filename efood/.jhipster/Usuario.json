@@ -23,27 +23,14 @@
       "fieldType": "Long"
     }
   ],
-  "relationships": [
-    {
-      "relationshipName": "restaurante",
-      "otherEntityName": "restaurante",
-      "relationshipType": "many-to-one",
-      "otherEntityField": "nomeRestaurante"
-    },
-    {
-      "relationshipName": "pedido",
-      "otherEntityName": "pedido",
-      "relationshipType": "many-to-one",
-      "otherEntityField": "nomePedido"
-    }
-  ],
+  "relationships": [],
   "entityType": "domain",
   "service": "serviceClass",
   "dto": "mapstruct",
   "jpaMetamodelFiltering": false,
-  "readOnly": true,
+  "readOnly": false,
   "pagination": "no",
-  "name": "Pedir",
-  "changelogDate": "20221117033702",
+  "name": "Usuario",
+  "changelogDate": "20211109000001",
   "skipFakeData": true
 }

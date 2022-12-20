@@ -1,27 +1,19 @@
 {
-  "fields": [
+  "fields": [],
+  "relationships": [
     {
-      "fieldName": "nomeEntregador",
-      "fieldType": "String"
+      "relationshipName": "restaurante",
+      "otherEntityName": "restaurante",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "nomeRestaurante"
     },
     {
-      "fieldName": "telefoneRestaurante",
-      "fieldType": "Long"
-    },
-    {
-      "fieldName": "emailRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "ruaRestaurante",
-      "fieldType": "String"
-    },
-    {
-      "fieldName": "cepRestaurante",
-      "fieldType": "Long"
+      "relationshipName": "pedido",
+      "otherEntityName": "pedido",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "nomePedido"
     }
   ],
-  "relationships": [],
   "entityType": "user-task-form",
   "processBpmnId": "PedirProcess",
   "processEntityName": "PedirProcess",
