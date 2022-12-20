@@ -10,12 +10,27 @@ public class ThirdParty implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
-        System.out.println("OrderService: ###########################################");
-        System.out.println("OrderService: ###########################################");
-        System.out.println("OrderService: ###########################################");
-        System.out.println("OrderService:        Pedido " +  delegateExecution.getVariable("processInstance") + " aceito!");
-        System.out.println("OrderService: ###########################################");
-        System.out.println("OrderService: ###########################################");
-        System.out.println("OrderService: ###########################################\n\n\n");
+        PedirProcessDTO PedirProcess = (PedirProcessDTO) delegateExecution.getVariable("processInstance");
+        PedirDTO pedir = PedirProcess.getPedir();
+        String nome = pedir.getNomeUsuario();
+        if(nome.trim() == "caramal"){
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService:        Pedido " +  delegateExecution.getVariable("processInstance") + " Negado!");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################\n\n\n");
+            delegateExecution.setVariable("DevePedir", false)
+        }else{
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService:        Pedido " +  delegateExecution.getVariable("processInstance") + " aceito!");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################");
+            System.out.println("OrderService: ###########################################\n\n\n");
+            delegateExecution.setVariable("DevePedir", true)
+        }
     }
 }
