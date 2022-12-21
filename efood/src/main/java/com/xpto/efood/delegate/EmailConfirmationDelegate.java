@@ -1,6 +1,6 @@
-package com.mycompany.myapp.delegate;
+package com.xpto.efood.delegate;
 
-import com.mycompany.myapp.service.MailService;
+import com.xpto.efood.service.MailService;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Autowired;
