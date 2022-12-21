@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0s748ex" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.5.1" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <bpmn:process id="PedirProcess" name="PedirProcess" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_07kv4c0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_07kv4c0" sourceRef="StartEvent_1" targetRef="FazPedido" />
+    <bpmn:endEvent id="Event_0ezbzoa">
+      <bpmn:incoming>Flow_1ao557j</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1ao557j" sourceRef="EntregaPedidoUserTaskForm" targetRef="Event_0ezbzoa" />
+    <bpmn:sequenceFlow id="Flow_1g3pg52" sourceRef="ChecaPedido" targetRef="EntregaPedidoUserTaskForm" />
+    <bpmn:sequenceFlow id="Flow_005acg3" sourceRef="PreparaPedido" targetRef="ChecaPedido" />
+    <bpmn:sequenceFlow id="Flow_0gdsfkj" sourceRef="FazPedido" targetRef="SistemaProcessaPedido" />
+    <bpmn:userTask id="FazPedido" name="Cliente faz o pedido">
+      <bpmn:incoming>Flow_07kv4c0</bpmn:incoming>
+      <bpmn:outgoing>Flow_0gdsfkj</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="SistemaProcessaPedido" name="Sistema processa o pedido" camunda:delegateExpression="${thirdParty}">
+      <bpmn:incoming>Flow_0gdsfkj</bpmn:incoming>
+      <bpmn:outgoing>Flow_192q5p4</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="PreparaPedido" name="Preparar o pedido">
+      <bpmn:incoming>Flow_1hwzker</bpmn:incoming>
+      <bpmn:outgoing>Flow_005acg3</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="ChecaPedido" name="Checar o andamento do Pedido">
+      <bpmn:incoming>Flow_005acg3</bpmn:incoming>
+      <bpmn:outgoing>Flow_1g3pg52</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="EntregaPedidoUserTaskForm" name="Entregar o pedido">
+      <bpmn:incoming>Flow_1g3pg52</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ao557j</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:exclusiveGateway id="Gateway_13ociul">
+      <bpmn:extensionElements />
+      <bpmn:incoming>Flow_192q5p4</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ky0w16</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1hdiju0</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:sequenceFlow id="Flow_1ky0w16" sourceRef="Gateway_13ociul" targetRef="Activity_13soqxq">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${!DevePedir}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_1hdiju0" sourceRef="Gateway_13ociul" targetRef="Activity_0eufok8">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${DevePedir}</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_192q5p4" sourceRef="SistemaProcessaPedido" targetRef="Gateway_13ociul" />
+    <bpmn:endEvent id="Event_0phds24">
+      <bpmn:incoming>Flow_0qqwivm</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0qqwivm" sourceRef="Activity_13soqxq" targetRef="Event_0phds24" />
+    <bpmn:userTask id="Activity_13soqxq" name="Recusa o pedido">
+      <bpmn:incoming>Flow_1ky0w16</bpmn:incoming>
+      <bpmn:outgoing>Flow_0qqwivm</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sendTask id="Activity_0eufok8" name="Envia email confirmação" camunda:delegateExpression="${emailConfirmationDelegate}">
+      <bpmn:incoming>Flow_1hdiju0</bpmn:incoming>
+      <bpmn:outgoing>Flow_1hwzker</bpmn:outgoing>
+    </bpmn:sendTask>
+    <bpmn:sequenceFlow id="Flow_1hwzker" sourceRef="Activity_0eufok8" targetRef="PreparaPedido" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="PedirProcess">
+      <bpmndi:BPMNShape id="Event_1gqpugm_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="152" y="252" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1g79zxm_di" bpmnElement="FazPedido">
+        <dc:Bounds x="250" y="230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_176vsbh_di" bpmnElement="SistemaProcessaPedido">
+        <dc:Bounds x="430" y="230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0phds24_di" bpmnElement="Event_0phds24">
+        <dc:Bounds x="1032" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0ghx2ja_di" bpmnElement="Event_0ezbzoa">
+        <dc:Bounds x="1472" y="252" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1cnqg91_di" bpmnElement="EntregaPedidoUserTaskForm">
+        <dc:Bounds x="1300" y="230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0rz2jov_di" bpmnElement="ChecaPedido">
+        <dc:Bounds x="1140" y="230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_13qkw1u_di" bpmnElement="PreparaPedido">
+        <dc:Bounds x="950" y="230" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_13ociul_di" bpmnElement="Gateway_13ociul" isMarkerVisible="true">
+        <dc:Bounds x="615" y="245" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1d4skd5_di" bpmnElement="Activity_13soqxq">
+        <dc:Bounds x="810" y="80" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0vh6tri_di" bpmnElement="Activity_0eufok8">
+        <dc:Bounds x="760" y="230" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_07kv4c0_di" bpmnElement="Flow_07kv4c0">
+        <di:waypoint x="188" y="270" />
+        <di:waypoint x="250" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ao557j_di" bpmnElement="Flow_1ao557j">
+        <di:waypoint x="1400" y="270" />
+        <di:waypoint x="1472" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1g3pg52_di" bpmnElement="Flow_1g3pg52">
+        <di:waypoint x="1240" y="270" />
+        <di:waypoint x="1300" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_005acg3_di" bpmnElement="Flow_005acg3">
+        <di:waypoint x="1050" y="270" />
+        <di:waypoint x="1140" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0gdsfkj_di" bpmnElement="Flow_0gdsfkj">
+        <di:waypoint x="350" y="270" />
+        <di:waypoint x="430" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ky0w16_di" bpmnElement="Flow_1ky0w16">
+        <di:waypoint x="640" y="245" />
+        <di:waypoint x="640" y="120" />
+        <di:waypoint x="810" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1hdiju0_di" bpmnElement="Flow_1hdiju0">
+        <di:waypoint x="665" y="270" />
+        <di:waypoint x="760" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_192q5p4_di" bpmnElement="Flow_192q5p4">
+        <di:waypoint x="530" y="270" />
+        <di:waypoint x="615" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0qqwivm_di" bpmnElement="Flow_0qqwivm">
+        <di:waypoint x="910" y="120" />
+        <di:waypoint x="1032" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1hwzker_di" bpmnElement="Flow_1hwzker">
+        <di:waypoint x="860" y="270" />
+        <di:waypoint x="950" y="270" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
