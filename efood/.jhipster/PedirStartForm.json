@@ -23,7 +23,20 @@
       "fieldValidateRules": ["required"]
     }
   ],
-  "relationships": [],
+  "relationships": [
+    {
+      "relationshipName": "restaurante",
+      "otherEntityName": "restaurante",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "nomeRestaurante"
+    },
+    {
+      "relationshipName": "pedido",
+      "otherEntityName": "pedido",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "nomePedido"
+    }
+  ],
   "entityType": "start-form",
   "processBpmnId": "PedirProcess",
   "processEntityName": "PedirProcess",
