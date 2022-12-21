@@ -12,7 +12,7 @@ public class ThirdParty implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
-        Boolean tarde = LocalTime.now().isAfter( LocalTime.parse( "0:01" ) );
+        Boolean tarde = LocalTime.now().isAfter( LocalTime.parse( "00:01" ) );
         if(tarde){
             System.out.println("OrderService: ###########################################");
             System.out.println("OrderService: ###########################################");
